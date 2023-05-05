@@ -1,0 +1,138 @@
+/* Write CSS code here */
+body{
+    margin: 0;
+}
+/* header css  */
+div.mainheader_container{
+    background-color: #011a37;
+    padding: 5px 0;
+}
+/* header brand name  */
+h1.brand-name{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+div.header-subcontainer{
+    /* flex:- to align like column or row */
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+/* navbar  */
+nav.nav_container ul{
+    list-style: none;
+    padding: 0;
+}
+/* navbar unorderedlist listitem */
+nav.nav_container ul li{
+    /* inline:- width and height of element */
+    display: inline;
+}
+/* anchor tag  */
+nav.nav_container ul li a{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    padding: 5px 25px;
+    text-decoration: none;
+}
+/* home anchor link  */
+a:hover{
+    border-bottom: 1px solid white;
+}
+/* Row 1 Column 2 */
+div.hero_container{
+    box-sizing: border-box;
+    display: grid;
+    /*grid temp specifies the number of columns in grid*/
+    grid-template-columns: 45% 55%;
+    column-gap: 20px;
+    padding:10% 15%;
+    align-items: center;
+    /* justify content define how browse distribute space btwn and around content */
+    justify-content: center;
+    background-color: #047ade;
+    height: 702px;
+    overflow: hidden;
+
+}
+h1.hero_heading{
+    margin: 0;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+div.col-one{
+    padding: 5px 5px;
+    
+}
+.col-one .para1{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 17px;
+    padding: 25px 0;
+    margin: 0;
+
+}
+.col-one .readmore_btn{
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+/* column2 row 1 */
+div.col-two{
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    width: 75%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px black;
+}
+div.col-two .hero_headingtwo{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 5px 10px;
+    line-height: 30 px;
+    color: #333;
+    margin: 0;
+}
+div.col-two ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+}
+div.col-two ul li{
+    font-family: 'Lato', sans-serif;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Media query Breakpoint >480px */
+@media only screen and (max-width:480px){
+    div.hero_container{
+        grid-template-columns: auto;
+        padding: 5% 10%;
+    }
+    div.col-two{
+        width: 100%;
+        margin: 50px 0;
+    }
+    div.header-subcontainer{
+        padding: 0 40px;
+    }
+    nav.nav_container ul li a{
+       padding: 5px 10px;
+    }
+}
